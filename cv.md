@@ -1,7 +1,5 @@
 # Curriculum Vitae
 
-![photo](/images_for_rs/avatar.png)
-
 ## Andrey Golovin
 
 ### _Contact info:_
@@ -53,7 +51,7 @@ I am 30 years old. I am an engeneer. For a long time I was interested in how web
 let me introduce you **7 kyu kata from CodeWars**:
 
 The Menger Sponge is a three-dimensional fractal, first described by Karl Menger in 1926.
-![cubes](/images_for_rs/V6Rb4Za.jpeg)
+![cubes](http://i.imgur.com/V6Rb4Za.jpg)
 
 1. Start from a cube (first part of image).
 2. Scale down the cube so that side length is 1/3 of its original, and make 20 copies of it.
