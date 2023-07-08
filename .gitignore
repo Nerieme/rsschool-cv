@@ -6,7 +6,7 @@ gulpfile.js
 *.json
 
 # dependencies
-/CV MockUps
+/assets/CV MockUps
 /sass
 
 # testing

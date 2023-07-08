@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Krona One';
-	src: url('../fonts/KronaOne-Regular.eot');
-	src: url('../fonts/KronaOne-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/KronaOne-Regular.woff2') format('woff2'),
-		url('../fonts/KronaOne-Regular.woff') format('woff'),
-		url('../fonts/KronaOne-Regular.ttf') format('truetype'),
-		url('../fonts/KronaOne-Regular.svg#KronaOne-Regular') format('svg');
+	src: url('../assets/fonts/KronaOne-Regular.eot');
+	src: url('../assets/fonts/KronaOne-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/KronaOne-Regular.woff2') format('woff2'),
+		url('../assets/fonts/KronaOne-Regular.woff') format('woff'),
+		url('../assets/fonts/KronaOne-Regular.ttf') format('truetype'),
+		url('../assets/fonts/KronaOne-Regular.svg#KronaOne-Regular') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -24,48 +24,48 @@
 
 @font-face {
 	font-family: 'Josefin Sans';
-	src: url('../fonts/JosefinSans-LightItalic.eot');
-	src: url('../fonts/JosefinSans-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/JosefinSans-LightItalic.woff2') format('woff2'),
-		url('../fonts/JosefinSans-LightItalic.woff') format('woff'),
-		url('../fonts/JosefinSans-LightItalic.ttf') format('truetype'),
-		url('../fonts/JosefinSans-LightItalic.svg#JosefinSans-LightItalic') format('svg');
+	src: url('../assets/fonts/JosefinSans-LightItalic.eot');
+	src: url('../assets/fonts/JosefinSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/JosefinSans-LightItalic.woff2') format('woff2'),
+		url('../assets/fonts/JosefinSans-LightItalic.woff') format('woff'),
+		url('../assets/fonts/JosefinSans-LightItalic.ttf') format('truetype'),
+		url('../assets/fonts/JosefinSans-LightItalic.svg#JosefinSans-LightItalic') format('svg');
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Josefin Sans';
-	src: url('../fonts/JosefinSans-Regular.eot');
-	src: url('../fonts/JosefinSans-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/JosefinSans-Regular.woff2') format('woff2'),
-		url('../fonts/JosefinSans-Regular.woff') format('woff'),
-		url('../fonts/JosefinSans-Regular.ttf') format('truetype'),
-		url('../fonts/JosefinSans-Regular.svg#JosefinSans-Regular') format('svg');
+	src: url('../assets/fonts/JosefinSans-Regular.eot');
+	src: url('../assets/fonts/JosefinSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/JosefinSans-Regular.woff2') format('woff2'),
+		url('../assets/fonts/JosefinSans-Regular.woff') format('woff'),
+		url('../assets/fonts/JosefinSans-Regular.ttf') format('truetype'),
+		url('../assets/fonts/JosefinSans-Regular.svg#JosefinSans-Regular') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Josefin Sans';
-	src: url('../fonts/JosefinSans-Medium.eot');
-	src: url('../fonts/JosefinSans-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/JosefinSans-Medium.woff2') format('woff2'),
-		url('../fonts/JosefinSans-Medium.woff') format('woff'),
-		url('../fonts/JosefinSans-Medium.ttf') format('truetype'),
-		url('../fonts/JosefinSans-Medium.svg#JosefinSans-Medium') format('svg');
+	src: url('../assets/fonts/JosefinSans-Medium.eot');
+	src: url('../assets/fonts/JosefinSans-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/JosefinSans-Medium.woff2') format('woff2'),
+		url('../assets/fonts/JosefinSans-Medium.woff') format('woff'),
+		url('../assets/fonts/JosefinSans-Medium.ttf') format('truetype'),
+		url('../assets/fonts/JosefinSans-Medium.svg#JosefinSans-Medium') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Josefin Sans';
-	src: url('../fonts/JosefinSans-Bold.eot');
-	src: url('../fonts/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
-		url('../fonts/JosefinSans-Bold.woff') format('woff'),
-		url('../fonts/JosefinSans-Bold.ttf') format('truetype'),
-		url('../fonts/JosefinSans-Bold.svg#JosefinSans-Bold') format('svg');
+	src: url('../assets/fonts/JosefinSans-Bold.eot');
+	src: url('../assets/fonts/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/JosefinSans-Bold.woff2') format('woff2'),
+		url('../assets/fonts/JosefinSans-Bold.woff') format('woff'),
+		url('../assets/fonts/JosefinSans-Bold.ttf') format('truetype'),
+		url('../assets/fonts/JosefinSans-Bold.svg#JosefinSans-Bold') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
