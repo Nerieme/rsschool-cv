@@ -2,14 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <link rel="icon" href="./assets/icons/fav/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="https://kit.fontawesome.com/2fb3dd057d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <header>
+    <nav>
+      <div class="container">
+        <ul class="menu">
+          <li class="menu__item"><a href="#profile" class="menu__link">Profile</a></li>
+          <li class="menu__item"><a href="#summary" class="menu__link">Summary</a></li>
+          <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+          <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+          <li class="menu__item"><a href="#courses" class="menu__link">Courses</a></li>
+          <li class="menu__item"><a href="#code" class="menu__link">Code</a></li>
+          <li class="menu__item"><a href="#language" class="menu__link">Language</a></li>
+          <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="profile" id="profile">
+      <div class="container">
+        <div class="profile__wrapper">
+          <div class="profile__design-orange"></div>
+          <div class="profile__design-blue"></div>
+          <div class="name__bcg"></div>
+          <div class="name__wrapper">
+            <h1 class="name__title">Andrey Golovin</h1>
+            <p class="name__descr">Front-end developer</p>
+          </div>
+          <div class="photo__bcg-orange"></div>
+          <div class="photo__bcg-white"></div>
+          <div class="photo__wrapper">
+            <img src="./assets/img/ava_photo.png" alt="photo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="box">
+      <div class="container">
+        <div class="section__wrapper">
+          <div class="section__inner">
+            <section class="summary" id="summary">
+              <h2 class="summary__title">Summary</h2>
+              <p class="summary__text">I am 30 years old. I am an engeneer. For a long time I was interested
+                in how websites are created and work on the Internet. At first I got
+                interested in the issue of website design. I took web design courses
+                and learned a lot of new, interesting things. I also studied various
+                programs for creating design, such as: photoshop, illustrator, indesign,
+                figma, blender, 3ds max. Now I want to know how the site works "under
+                the hood" of a beautiful picture.</p>
+            </section>
+            <section class="skills" id="skills">
+              <h2 class="skills__title">Skills</h2>
+              <div class="skills__wrapper">
+                <div class="skills__item">
+                  <div class="skills__item_schedule skills__item_schedule-html">
+                    <p class="skills__item_percent">80%</p>
+                  </div>
+                  <p class="skills__item_name">HTML</p>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__item_schedule skills__item_schedule-css">
+                    <p class="skills__item_percent">70%</p>
+                  </div>
+                  <p class="skills__item_name">CSS</p>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__item_schedule skills__item_schedule-js">
+                    <p class="skills__item_percent">20%</p>
+                  </div>
+                  <p class="skills__item_name">JavaScript</p>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__item_schedule skills__item_schedule-git">
+                    <p class="skills__item_percent">70%</p>
+                  </div>
+                  <p class="skills__item_name">Git</p>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__item_schedule skills__item_schedule-ph">
+                    <p class="skills__item_percent">80%</p>
+                  </div>
+                  <p class="skills__item_name">Photoshop</p>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__item_schedule skills__item_schedule-fg">
+                    <p class="skills__item_percent">50%</p>
+                  </div>
+                  <p class="skills__item_name">Figma</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="education" id="education">
+            <h2 class="education__title">Education</h2>
+            <div class="education__wrapper">
+              <div class="education__item">
+                <p class="education__text">
+                  2023 - present <br>
+                  Front-end developer <br>
+                  RS School
+                </p>
+              </div>
+              <div class="education__item">
+                <p class="education__text">
+                  2019 - 2021 <br>
+                  Design <br>
+                  IT Step Academy
+                </p>
+              </div>
+              <div class="education__item">
+                <p class="education__text">
+                  2009 - 2015 <br>
+                  Engeneer <br>
+                  Tula state University
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <section class="courses" id="courses">
+      <div class="container">
+        <div class="courses__wrapper">
+          <h2 class="courses__title">Courses & self-studing</h2>
+          <div class="courses__item">
+            <p class="courses__item-name">
+              <a href="https://www.udemy.com/course/webdeveloper/" class="courses__item-link">Udemy</a>
+              Front-end Dev course
+            </p>
+            <p class="courses__item-name">
+              <a href="https://code-basics.com/ru/languages/html" class="courses__item-link">Code-basics</a>
+              HTML course
+            </p>
+          </div>
+          <div class="courses__item">
+            <p class="courses__item-name">
+              <a href="https://developer.mozilla.org/ru/docs/Web" class="courses__item-link">MDN</a>
+              &
+              <a href="http://htmlbook.ru/" class="courses__item-link">HTMLbook</a>
+              articles
+            </p>
+            <p class="courses__item-name">
+              <a href="https://practicum.yandex.ru/" class="courses__item-link">Yandex practicum</a>
+              Front-end Dev free course
+            </p>
+          </div>
+          <div class="courses__item">
+            <p class="courses__item-name">
+              <a href="https://webref.ru/course" class="courses__item-link">WebRef</a>
+              HTML & CSS courses
+            </p>
+            <p class="courses__item-name">
+              <a href="https://code-basics.com/ru/languages/css" class="courses__item-link">Code-basic</a>
+              CSS course
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="code" id="code">
+      <div class="container">
+        <h2 class="code__title">Code</h2>
+        <p class="code__subtitle">7 kyu kata from CodeWars:</p>
+        <p class="code__text">The Menger Sponge is a three-dimensional fractal, first described by Karl Menger in 1926.
+        </p>
+        <div class="code__image">
+          <img
+            src="https://camo.githubusercontent.com/575bc0441e3ac1ed530a452ff8c906c4c3acf0d5e73df908982c1299529901fc/687474703a2f2f692e696d6775722e636f6d2f56365262345a612e6a7067"
+            alt="task_picture">
+        </div>
+        <ol class="code__list">
+          <li>Start from a cube (first part of image).</li>
+          <li>Scale down the cube so that side length is 1/3 of its original, and make 20 copies of it.</li>
+          <li>Place the copies so that they measure the same size as the original cube but without its central parts
+            (next part of image)</li>
+          <li>Repeat the process from step 2 for the new smaller cubes from the previous step.</li>
+          <li>In each iteration (e.g. repeating the last three steps), the effect will be that parts of the cube will be
+            removed, they'll never be added. Menger sponge will always consist of parts will never be removed,
+            regardless of how many iterations you do.</li>
+        </ol>
+        <p class="code__text">
+          <span>Task:</span> In this kata you will create a function that takes non negative integers (from 0 to n) and
+          return the amount of cubes that the Menger Sponge would have in that specific iteration.
+        </p>
+        <pre class="code__example">
+          function calc_ms(n) {
+            let cube = 1;
+            if (n === 0) {
+              return 1
+            } else if (n &lt; 0) {
+              return "You broke the universe..."
+            } else
+          
+            for (let i = 1; i &lt;= n; i++) {
+              cube *= 20;
+            }
+          
+            return cube;
+          }</pre>
+      </div>
+    </section>
+    <section class="language" id="language">
+      <div class="container">
+        <h2 class="language__title">Language</h2>
+        <p class="language__text">Russian - native</p>
+        <p class="language__text">English - beginner</p>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="projects__title">Projects</h2>
+        <a href="https://Nerieme.github.io/rsschool-cv/cv" class="projects__text">CV#1. Markdown & Git</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Contacts</h2>
+        <p class="contacts__text">
+          <a href="tel:+74872123456" class="contacts__phone"><i class="fa-solid fa-phone"></i></a>
+          <a href="mailto:hijikatatoshidjo@gmail.com" class="contacts__mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/Nerieme" class="contacts__github"><i class="fa-brands fa-github"></i></a>
+          <span><a href="https://discord.com" class="contacts__discord"><i
+                class="fa-brands fa-discord"></i></a>Necrophazatron</span>
+        </p>
+      </div>
+    </section>
+    <div class="developed">
+      <div class="container">
+        <div class="developed__wrapper">
+          <div class="developed__item">
+            <p>Developed by AndyGuver</p>
+          </div>
+          <div class="developed__item">
+            <a href="https://rs.school/js">
+              <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool">
+            </a>
+          </div>
+          <div class="developed__item">
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
