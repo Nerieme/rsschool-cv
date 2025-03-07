@@ -20,6 +20,46 @@ body {
     background-color: rgb(15, 15, 15);
 }
 
+.left__arrow {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: -150px;
+    text-decoration: none;
+    font-size: 40px;
+    width: 98px;
+    text-align: center;
+    padding: 24px;
+    background-color: rgb(200, 200, 200);
+    color: rgb(15, 15, 15);
+    border-radius: 50px;
+}
+
+.left__arrow:hover {
+    background-color: rgb(15, 15, 15);
+    color: rgb(200, 200, 200);
+}
+
+.right__arrow {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: -150px;
+    text-decoration: none;
+    font-size: 40px;
+    width: 98px;
+    text-align: center;
+    padding: 24px;
+    background-color: rgb(200, 200, 200);
+    color: rgb(15, 15, 15);
+    border-radius: 50px;
+}
+
+.right__arrow:hover {
+    background-color: rgb(15, 15, 15);
+    color: rgb(200, 200, 200);
+}
+
 .wrapper {
     position: fixed;
     top: 0;
