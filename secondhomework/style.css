@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'my_font';
+    src: url('./fonts/ElephantsinCherryTrees.woff2') format('woff2'),
+        url('./fonts/ElephantsinCherryTrees.woff') format('woff'),
+        url('./fonts/elephantsincherrytrees.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(15, 15, 15);
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 15px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 65px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 50px;
+}
+
+.title {
+    font-family: "my_font";
+    font-size: 24px;
+    height: 36px;
+    color: rgb(15, 15, 15);
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__item {
+    margin-right: 25px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: rgb(200, 200, 200);
+}
+
+.item__link {
+    font-family: "my_font";
+    font-size: 12px;
+    display: inline-block;
+    height: 58px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.list__item:hover {
+    background-color: rgb(15, 15, 15);
+    transition: 0.5s;
+}
+
+.item__link:hover {
+    color: rgb(200, 200, 200);
+    transition: 0.5s;
+}
+
+/* Start homework */
+
+.anchor {
+    position: relative;
+    top: -130px;
+}
+
+.task__header {
+    font-family: "my_font";
+    font-size: 14px;
+    text-align: center;
+    height: 22px;
+}
+
+/* Task #1 */
+
+.first__task {
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 200, 200);
+    border-radius: 65px;
+    padding: 30px 240px;
+}
+
+.task__one_subheader {
+    margin: 20px 0 30px 0;
+    font-size: 32px;
+}
+
+.task__one_text {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.divider {
+    margin-top: 20px;
+    height: 1px;
+    background-color: rgb(220, 220, 220);
+}
+
+.subtext {
+    font-size: 12px;
+}
+
+/* Task #2 */
+
+.second__task {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 65px;
+    padding: 30px 240px;
+}
+
+.task__two_subheader {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.task__two_phrases {
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.mini {
+    font-size: 12px;
+}
+
+.task__two_text {
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 16px;
+    background: linear-gradient(#000000, #00000075 40%, #00000000 95%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000000;
+}
+
+.task__two_text:first-letter {
+    font-family: 'Courier New', Courier, monospace;  
+	font-size: 20px;
+    line-height: 18px;
+    font-weight: bold;
+	vertical-align: bottom;
+}
+
+/* Task #3 */
+
+.third__task {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 65px;
+    padding: 30px 240px;
+    width: 1200px;
+}
+
+.task__three_subheader {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.formulas__subheader{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.task__three_text {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.formulas__design {
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    padding: 0 10px;
+    font-size: 20px;
+    background-color: lightcoral;
+}
+
+.red {
+    color: darkred;
+    font-style: italic;
+    font-weight: bold;
+}

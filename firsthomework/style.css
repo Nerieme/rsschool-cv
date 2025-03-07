@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(144, 79, 74);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 870px;
+    padding: 30px;
+    background-color: white;
+}
+.header__logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+.header__logo > h1 {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar__list {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar__item {
+    margin-right: 30px;
+    list-style-type: none;
+}
+.navbar__item:last-child {
+    margin-right: 0px;
+}
+.navbar__link {
+    text-decoration: none;
+    color: black;
+}
+.navbar__link:hover {
+    color: rgb(124, 12, 147);
+    transition: 0.5s;
+}
+/* Task one part one */
+.raj__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.raj__inner {
+    padding: 30px;
+    background-color: white;
+    width: 870px;
+}
+.raj__header {
+    color: rgb(60, 0, 139);
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+.raj__subheader {
+    text-transform: uppercase;
+    color:gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+.raj__subheader > span {
+    text-transform: none;
+}
+.raj__text {
+    font-size: 18px;
+}
+.raj__text > span {
+    font-size: 16px;
+    font-style: oblique;
+}
+/* Task one part two */
+.cards__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards__inner {
+    padding: 30px;
+    background-color: white;
+    width: 870px;
+}
+.cards__header {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+.player__name {
+    font-size: 18px;
+}
+.player__cards {
+    display: flex;
+}
+.card {
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: rgb(237, 237, 237);
+    font-size: 50px;
+}
+.red__card {
+    color: darkred;
+}
+/* Task one part three */
+.htmltutor__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.htmltutor__inner {
+    padding: 30px;
+    background-color: white;
+    width: 870px;
+}
+.underline {
+    height: 2px;
+    background-color: rgb(202, 202, 202);
+}
+.htmltutor__header {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.htmltutor__subheader {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+.htmltutor__text {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0;
+}
+.code__formatter {
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+pre {
+    margin: 0;
+}
+code {
+    background-color: rgb(233, 233, 233);
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+code > span {
+    color: black;
+}
+.mini {
+    font-size: 14px;
+}
+.mini > span {
+    color: darkcyan;
+    background-color: rgb(233, 233, 233);
+}
+.footer__link {
+    font-size: 60px;
+    position: fixed;
+    bottom: 0px;
+    right: 200px;
+}
