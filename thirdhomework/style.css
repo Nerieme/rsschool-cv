@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.page {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 140px 100px 100px;
+    background-color: gray;
+}
+
+.anchor {
+    position: relative;
+    top: -180px;
+    left: 50%;
+}
+
+.left__arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 212px;
+    text-decoration: none;
+    font-size: 40px;
+    width: 140px;
+    text-align: center;
+    padding: 45px;
+    background-color: #ce6b7b;
+    color: white;
+}
+
+.left__arrow:hover {
+    background-color: white;
+    color: #a53949;
+    transition: 0.5s;
+}
+
+.right__arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 211px;
+    text-decoration: none;
+    font-size: 40px;
+    width: 140px;
+    text-align: center;
+    padding: 45px;
+    background-color: #ce6b7b;
+    color: white;
+}
+
+.right__arrow:hover {
+    background-color: white;
+    color: #a53949;
+    transition: 0.5s;
+}
+
+.nav__bar {
+    position: fixed;
+    top: 0px;
+    width: 1000px;
+    height: 140px;
+    padding: 20px;
+    background-color: #ce6b7b;
+    z-index: 1;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 90px;
+    border: 1px solid #a53949;
+    border-style: dashed;
+}
+
+.header {
+    float: left;
+    color: white;
+    font-size: 36px;
+    line-height: 100px;
+    margin-right: 90px;
+}
+
+.nav__list {
+    float: left;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+.nav__item {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__link:hover {
+    color: #a53949;
+    transition: 0.5s;
+}
+
+.nav__link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -5px;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #a53949;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* First task */
+
+.fruitlist__task {
+    margin: 0 auto;
+    padding: 40px 250px;
+    background-color: white;
+}
+
+.fruitlist__task_header {
+    font-size: 36px;
+    text-align: center;
+}
+
+.fruitlist__task_list {
+    margin: 40px auto 0;
+    padding: 20px;
+    background-color: #f7a5b5;
+    list-style-position: inside;
+}
+
+.fruitlist__item {
+    font-size: 20px;
+    line-height: 22px;
+    color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: #ce6b7b;
+}
+
+.fruitlist__item:first-child {
+    margin: 0;
+}
+
+.fruitlist__text {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #a5394a;
+}
+
+/* Second task */
+
+.todolist__task {
+    margin: 140px auto 0;
+    padding: 40px 250px;
+    background-color: white;
+}
+
+.todolist__task_header {
+    font-size: 36px;
+    text-align: center;
+}
+
+.todolist__task_list {
+    margin: 20px auto 0;
+    list-style-type: none;
+}
+
+.todolist__item {
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 60px;
+}
+
+.todolist__item::before {
+    content: url("./icons/empty_icon.png");
+    position: absolute;
+    top: 10px;
+}
+
+.todolist__item::after {
+    content: url("./icons/close_icon.png");
+    position: absolute;
+    top: 10px;
+}
+
+.todolist__item:nth-child(2)::before {
+    content: url("./icons/tick_icon.png");
+    position: absolute;
+    top: 10px;
+}
+
+.todolist__item:nth-child(5)::before {
+    content: url("./icons/tick_icon.png");
+    position: absolute;
+    top: 10px;
+}
+
+.todolist__item:nth-child(11)::before {
+    content: url("./icons/tick_icon.png");
+    position: absolute;
+    top: 10px;
+}
+
+.todolist__item:nth-child(even) {
+    background-color: #b5deef;
+}
+
+.todolist__item:nth-child(odd) {
+    background-color: #add6de;
+}
+
+.todolist__item ~ .checked {
+    background-color: #e7e7e7;
+}
+
+.todolist__item:nth-child(2) > span {
+    text-decoration: line-through;
+}
+
+.todolist__item:nth-child(5) > span {
+    text-decoration: line-through;
+}
+
+.todolist__item:nth-child(11) > span {
+    text-decoration: line-through;
+}
+
+.todolist__text {
+    display: inline-block;
+    margin: 10px 60px;
+}
+
+/* Third task */
+
+.tag__task {
+    max-width: 1000px;
+    margin: 140px auto 0px;
+    padding: 40px 70px;
+    background-color: white;
+}
+
+.tag__task_header {
+    font-size: 36px;
+    text-align: center;
+}
+
+.tag__task_subheader {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.tag__task_definition {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.tag__task_list {
+    margin-top: 20px;
+}
+
+.tag__task_termin {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.tag__task_descr {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.tag__task_innerlist {
+    margin-left: 80px;
+}
+
+.tag__task_innerlightitem {
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 24px;
+}
+
+.tag__task_innerlink {
+    text-decoration: none;
+}
