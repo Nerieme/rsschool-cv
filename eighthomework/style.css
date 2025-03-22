@@ -1,0 +1,358 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.page {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    border-radius: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+/* ==========navbar========== */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-left: 5px solid #def52f;
+    border-right: 5px solid #def52f;
+    border-radius: 70px;
+    background-color: #4c52103a;
+    z-index: 1;
+}
+
+.left__arrow, .right__arrow {
+    position: absolute;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding: 44px 20px;
+    border-radius: 70px;
+    background-color: #def52f;
+    outline: 2px solid #889144;
+    text-align: center;
+    transition: 0.5s;
+    color: #889144;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.left__arrow {
+    left: -200px;
+}
+
+.right__arrow {
+    right: -200px;
+}
+
+.left__arrow:hover, .right__arrow:hover {
+    width: 110px;
+    height: 44px;
+    padding: 10px 20px;
+    background-color: #def52f;
+    outline: 2px solid #889144;
+    transition: 0.5s;
+    color: #889144;
+}
+
+.navbar__img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #889144;
+    border-radius: 50px;
+}
+
+.navbar__header {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #def52f;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    transition: 1s;
+}
+
+.navbar__item {
+    position: relative;
+    top: 0;
+    margin-right: 30px;
+    border-radius: 32px;
+    background-color: #def52f;
+    box-shadow: 0px 8px 8px 0px rgba(79, 80, 34, 0.2);
+    outline: 2px solid #889144;
+    transition: 0.5s;
+}
+
+.navbar__item:last-child {
+    margin-right: 15px;
+}
+
+.navbar__item:hover {
+    position: relative;
+    top: 10px;
+    background-color: #889144;
+    box-shadow: 0px 8px 8px 0px rgba(80, 65, 34, 0.2) inset;
+    outline: 2px solid #def52f;
+    transition: 0.5s;
+}
+
+.navbar__item:hover > .navbar__link {
+    color: #def52f;
+    transition: 0.5s;
+}
+
+.navbar__link {
+    display: inline-block;
+    padding: 20px;
+    color: #889144;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.anchor {
+    position: absolute;
+    top: -250px;
+}
+
+/* ==========clock========== */
+
+.round {
+    margin: 0 auto;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border: 5px solid darkgreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: darkgreen;
+    border-radius: 50%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    translate: -50%;
+    background-color: darkgreen;
+    transform-origin: bottom;
+    transition: 10s linear;
+}
+
+.hour {
+    width: 2%;
+    height: 30%;
+}
+
+.minute {
+    width: 1%;
+    height: 40%;
+}
+
+.round:hover .hour {
+    rotate: 1turn;
+}
+
+.round:hover .minute {
+    rotate: 6turn;
+}
+
+/* ==========gates========== */
+
+.gates {
+    position: relative;
+    margin: 150px auto 0;
+    width: 800px;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+.text {
+    padding-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    font-style: bold;
+    text-align: center;
+}
+
+.gate {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(197, 0, 92);
+    border: 10px solid rgb(111, 0, 52);
+    transition: 2s cubic-bezier(.5,-1,.5,1);
+    
+}
+
+.left {
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.right {
+    top: 0;
+    right: 0;
+    transform-origin: right;
+}
+
+.gates:hover .left {
+    transform: perspective(900px) rotateY(35deg);
+}
+
+.gates:hover .right {
+    transform: perspective(900px) rotateY(-35deg);
+}
+
+/* ==========block========== */
+
+.block {
+    position: relative;
+    margin: 150px auto 0;
+    width: 800px;
+    height: 300px;
+    background-color: #ffffff;
+    display: flex;
+    transition: 0.3s;
+}
+
+.font {
+    width: 400px;
+    padding-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    font-style: bold;
+    text-align: center;
+}
+
+.pic {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.block:hover {
+    filter: brightness(60%);
+}
+
+.block:hover > .pic > .img {
+    transform: scale(1.1);
+}
+
+/* ===========add=========== */
+
+.additional {
+    position: relative;
+    margin: 150px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.picture {
+    position: relative;
+    width: 100px;
+    height: 600px;
+    border-radius: 50px;
+    transition: .7s cubic-bezier(.5,0,.5,1);
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: .7s cubic-bezier(.5,0,.5,1);
+    filter: brightness(60%);
+}
+
+.picture:hover {
+    width: 940px;
+    transform: translateY(10px) scale(1.04);
+}
+
+.picture:hover > .image {
+    filter: brightness(95%);
+}
+
+.ico {
+    position: absolute;
+    bottom: 26px;
+    left: 26px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10% 40% 10% 40%;
+    background-color: #ffffff;
+}
+
+.title {
+    position: absolute;
+    width: 250px;
+    bottom: 50px;
+    left: 100px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.descr {
+    position: absolute;
+    width: 700px;
+    bottom: 25px;
+    left: 100px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
