@@ -8,23 +8,128 @@ img {
     vertical-align: top;
 }
 
+a {
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
 .visually-hidden {
     position: fixed;
     transform: scale(0);
 }
 
 .page {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 200px 0;
-    background-color: lightcyan;
+    padding: 50px 0 200px;
+    background-color: darkgray;
+    z-index: 0;
 }
+
+/* =========navbar========= */
+
+.navbar {
+    position: fixed;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar__pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    outline: 25px solid gray;
+}
+
+.navbar__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.navbar__header {
+    position: relative;
+    padding: 20px;
+    line-height: 16px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 35px;
+    color: white;
+    background-color: gray;
+    z-index: 1;
+}
+
+.navbar__line {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+}
+
+.navbar__link {
+    font-weight: bold;
+    padding: 20px;
+    line-height: 16px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 35px;
+    color: white;
+    background-color: gray;
+}
+
+.navbar__link:hover {
+    color: white;
+    background-color: black;
+    transition: .5s;
+}
+
+.arrow {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+}
+
+.arrow:hover {
+    color: white;
+    background-color: black;
+    transition: .5s;
+}
+
+.right__arrow {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.left__arrow {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.anchor {
+    position: absolute;
+    top: -260px;
+}
+
 
 /* ========progress======== */
 
 .progr {
-    margin: 150px auto 0;
+    position: relative;
+    margin: 200px auto 0;
     width: 500px;
     height: 100px;
     border: 3px solid orange;
@@ -50,6 +155,7 @@ img {
 /* ==========heart========= */
 
 .heart {
+    position: relative;
     margin: 150px auto 0;
     width: 65px;
     height: 65px;
@@ -70,6 +176,7 @@ img {
 /* =========school========= */
 
 .school {
+    position: relative;
     margin: 150px auto 0;
     width: 1000px;
     height: 500px;
@@ -172,6 +279,7 @@ img {
 /* ==========add=========== */
 
 .add {
+    position: relative;
     margin: 150px auto 0;
     display: flex;
     justify-content: space-evenly;
@@ -200,7 +308,7 @@ img {
 }
 
 .add__bcg:hover {
-    animation: trig .7s linear, trig .7s .7s linear reverse;
+    animation: trig 1.4s linear, trig 1.4s .7s linear reverse;
     background-color: blue;
 }
 
@@ -213,7 +321,7 @@ img {
 }
 
 .add__bcg:hover > .add__pic {
-    animation: trigpic .7s ease-in-out, trigpic .7s .7s ease-in-out reverse;
+    animation: trigpic 1.4s ease-in-out, trigpic 1.4s .7s ease-in-out reverse;
 }
 
 .add__pic {
@@ -228,13 +336,18 @@ img {
 }
 
 @keyframes trig {
-    20% {
-        transform: rotate(15deg);
+    10% {
+        transform: rotate(5deg);
     }
-    60% {
+    30% {
         transform: rotate(-15deg);
         border-radius: 5%;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: rotate(-45deg);
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
     }
     100% {
         transform: rotate(-45deg);
@@ -244,14 +357,17 @@ img {
 }
 
 @keyframes trigpic {
-    15% {
+    8% {
         transform: rotate(5deg);
     }
-    30% {
+    15% {
         transform: rotate(0deg);
     }
-    45% {
+    22% {
         transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(45deg);
     }
     100% {
         transform: rotate(45deg);
