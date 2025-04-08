@@ -1,0 +1,524 @@
+@font-face {
+    font-family: 'WS100';
+    src: url('./fonts/WorkSans-Thin.woff2') format('woff2'),
+    url('./fonts/WorkSans-Thin.woff') format('woff'),
+    url('./fonts/WorkSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS100i';
+    src: url('./fonts/WorkSans-ThinItalic.woff2') format('woff2'),
+    url('./fonts/WorkSans-ThinItalic.woff') format('woff'),
+    url('./fonts/WorkSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS200';
+    src: url('./fonts/WorkSans-ExtraLight.woff2') format('woff2'),
+    url('./fonts/WorkSans-ExtraLight.woff') format('woff'),
+    url('./fonts/WorkSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS200i';
+    src: url('./fonts/WorkSans-ExtraLightItalic.woff2') format('woff2'),
+    url('./fonts/WorkSans-ExtraLightItalic.woff') format('woff'),
+    url('./fonts/WorkSans-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS300';
+    src: url('./fonts/WorkSans-Light.woff2') format('woff2'),
+    url('./fonts/WorkSans-Light.woff') format('woff'),
+    url('./fonts/WorkSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS300i';
+    src: url('./fonts/WorkSans-LightItalic.woff2') format('woff2'),
+    url('./fonts/WorkSans-LightItalic.woff') format('woff'),
+    url('./fonts/WorkSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS400';
+    src: url('./fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('./fonts/WorkSans-Regular.woff') format('woff'),
+    url('./fonts/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS400i';
+    src: url('./fonts/WorkSans-Italic.woff2') format('woff2'),
+    url('./fonts/WorkSans-Italic.woff') format('woff'),
+    url('./fonts/WorkSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS500';
+    src: url('./fonts/WorkSans-Medium.woff2') format('woff2'),
+    url('./fonts/WorkSans-Medium.woff') format('woff'),
+    url('./fonts/WorkSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS500i';
+    src: url('./fonts/WorkSans-MediumItalic.woff2') format('woff2'),
+        url('./fonts/WorkSans-MediumItalic.woff') format('woff'),
+        url('./fonts/WorkSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS600';
+    src: url('./fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('./fonts/WorkSans-SemiBold.woff') format('woff'),
+    url('./fonts/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS600i';
+    src: url('./fonts/WorkSans-SemiBoldItalic.woff2') format('woff2'),
+    url('./fonts/WorkSans-SemiBoldItalic.woff') format('woff'),
+    url('./fonts/WorkSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS700';
+    src: url('./fonts/WorkSans-Bold.woff2') format('woff2'),
+    url('./fonts/WorkSans-Bold.woff') format('woff'),
+    url('./fonts/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS700i';
+    src: url('./fonts/WorkSans-BoldItalic.woff2') format('woff2'),
+    url('./fonts/WorkSans-BoldItalic.woff') format('woff'),
+    url('./fonts/WorkSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+   
+@font-face {
+    font-family: 'WS800';
+    src: url('./fonts/WorkSans-ExtraBold.woff2') format('woff2'),
+    url('./fonts/WorkSans-ExtraBold.woff') format('woff'),
+    url('./fonts/WorkSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS800i';
+    src: url('./fonts/WorkSans-ExtraBoldItalic.woff2') format('woff2'),
+    url('./fonts/WorkSans-ExtraBoldItalic.woff') format('woff'),
+    url('./fonts/WorkSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS900';
+    src: url('./fonts/WorkSans-Black.woff2') format('woff2'),
+    url('./fonts/WorkSans-Black.woff') format('woff'),
+    url('./fonts/WorkSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+    
+@font-face {
+    font-family: 'WS900i';
+    src: url('./fonts/WorkSans-BlackItalic.woff2') format('woff2'),
+        url('./fonts/WorkSans-BlackItalic.woff') format('woff'),
+        url('./fonts/WorkSans-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SM';
+    src: url('./fonts/SpaceMono-Regular.woff2') format('woff2'),
+    url('./fonts/SpaceMono-Regular.woff') format('woff'),
+    url('./fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SMi';
+    src: url('./fonts/SpaceMono-Italic.woff2') format('woff2'),
+    url('./fonts/SpaceMono-Italic.woff') format('woff'),
+    url('./fonts/SpaceMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SMB';
+    src: url('./fonts/SpaceMono-Bold.woff2') format('woff2'),
+        url('./fonts/SpaceMono-Bold.woff') format('woff'),
+        url('./fonts/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SMBi';
+    src: url('./fonts/SpaceMono-BoldItalic.woff2') format('woff2'),
+    url('./fonts/SpaceMono-BoldItalic.woff') format('woff'),
+    url('./fonts/SpaceMono-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 100vh;
+    background-color: #2B2B2B;
+}
+
+.trends {
+    padding: 80px 115px;
+    max-width: 1280px;
+    aspect-ratio: 1280px / 836px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.trends__inner {
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trends__subheader {
+    font-family: "WS600";
+    font-size: 38px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.trends__descr {
+    font-family: "WS400";
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.trends__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.trends__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.trends__pic {
+    display: block;
+    max-width: 330px;
+    aspect-ratio: 1 / 1;
+}
+
+.trends__pic_mini {
+    max-width: 100px;
+}
+
+.trends__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.trends__mini {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.trends__block {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A259FF;
+    border-radius: 20px;
+
+    font-family: "SMB";
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+.trends__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trends__subtitle {
+    font-family: "WS600";
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.trends__author {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+}
+
+.trends__avatar {
+    display: block;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+}
+
+.trends__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.trends__nickname {
+    font-family: "WS400";
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.creators {
+    padding: 80px 115px;
+    max-width: 1280px;
+    aspect-ratio: 1280px / 1085px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.creators__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.creators__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.creators__subheader {
+    font-family: "WS600";
+    font-size: 38px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.creators__descr {
+    font-family: "WS400";
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.creators__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 247px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid #A259FF;
+    background-color: transparent;
+
+    font-family: "WS600";
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.creators__btn:hover {
+    background-color: #A259FF;
+}
+
+.creators__btn:hover > .creators__pic {
+    fill: #FFFFFF;
+}
+
+.creators__pic {
+    width: 20px;
+    height: 20px;
+    fill: #A259FF;
+    transition: 1s;
+}
+
+.creators__cards {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    padding: 20px;
+    width: 240px;
+    aspect-ratio: 240 / 238;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.card__num {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    background-color: #2B2B2B;
+    border-radius: 50%;
+    
+    font-family: "SM";
+    font-size: 16px;
+    line-height: 140%;
+    color: #858584;
+}
+
+.card__pic {
+    max-width: 120px;
+    aspect-ratio: 1 / 1;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__name {
+    font-family: "WS600";
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.card__price {
+    display: flex;
+    gap: 10px;
+}
+
+.card__total {
+    font-family: "WS400";
+    font-size: 16px;
+    line-height: 140%;
+    color: #858584;
+}
+
+.card__cost {
+    font-family: "SM";
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}

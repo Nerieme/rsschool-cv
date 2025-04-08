@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medical</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="phone">
+                <header class="header">
+                    <div class="header__time">16:04</div>
+                    <div class="header__img">
+                        <svg class="pic-lte"><use xlink:href="sprite.svg#lte"></use></svg>
+                        <svg class="pic-wifi"><use xlink:href="sprite.svg#wifi"></use></svg>
+                        <svg class="pic-battery"><use xlink:href="sprite.svg#battery"></use></svg>
+                    </div>
+                </header>
+                <main>
+                    <section class="card">
+                        <h2 class="visually-hidden">A</h2>
+                        <div class="card__profile">
+                            <div class="card__user">
+                                <div class="card__img">
+                                    <img src="./images/card-img.png" alt="user-pic" class="card__pic">
+                                </div>
+                                <div class="card__intro">
+                                    <div class="card__hello">Hi, WelcomeBack</div>
+                                    <div class="card__name">John Doe</div>
+                                </div>
+                            </div>
+                            <div class="card__preferences">
+                                <div class="card__notifications">
+                                    <svg class="pic-notifications" viewBox="0 0 16 19">
+                                        <path d="M5.72 3.06a.5.5 0 1 0 1 0h-1Zm3.4 0a.5.5 0 1 0 1 0h-1Zm4.27 8.06-.38.32.38-.32Zm1.6 2.85.5-.07-.5.07Zm-7-11.67a.5.5 0 0 0 0 1v-1Zm5.23 4.98-.5.05.5-.05ZM2.6 11.12l.38.32-.38-.32ZM1 13.97l.5.08-.5-.08Zm7-10.67a.5.5 0 0 0 0-1v1ZM2.77 7.28l-.5-.05.5.05Zm7.36 7.87v.26h1v-.26h-1Zm-4.34.26v-.26h-1v.26h1Zm2.17 2.09a2.13 2.13 0 0 1-2.17-2.1h-1c0 1.73 1.43 3.1 3.17 3.1v-1Zm2.17-2.1c0 1.15-.96 2.1-2.17 2.1v1a3.13 3.13 0 0 0 3.17-3.1h-1ZM6.72 3.07c0-.57.16-.95.37-1.2.21-.23.5-.36.83-.36v-1c-.6 0-1.17.24-1.58.7-.4.46-.62 1.1-.62 1.86h1Zm1.2-1.56c.33 0 .61.13.82.36.21.25.38.63.38 1.2h1c0-.76-.22-1.4-.63-1.86C9.1.74 8.52.5 7.92.5v1Zm5.1 9.94c.1.13.26.27.37.39.14.13.28.27.42.46.27.36.55.9.68 1.76l1-.15a4.8 4.8 0 0 0-1.4-2.79l-.31-.31-.77.64ZM8 3.3v-1 1Zm0 0c2.52 0 4.52 2.05 4.72 4.03l1-.1C13.46 4.73 11.03 2.3 8 2.3v1Zm4.72 4.03c.1 1.07.05 1.88.02 2.5-.01.3-.03.6 0 .85.02.25.08.53.27.76l.77-.64s-.04-.04-.05-.2c-.01-.17 0-.4.01-.71.03-.62.09-1.5-.03-2.66l-.99.1ZM2.22 10.8l-.31.31A4.8 4.8 0 0 0 .52 13.9l.99.15a3.8 3.8 0 0 1 1.1-2.22l.38-.39-.77-.64ZM8 2.3v1-1Zm0 0c-3.03 0-5.47 2.43-5.72 4.93l1 .1C3.48 5.35 5.48 3.3 8 3.3v-1ZM2.28 7.23c-.11 1.16-.05 2.04-.02 2.66.02.32.02.54.01.7-.01.17-.05.2-.05.2l.77.65c.2-.23.25-.51.28-.76.02-.25 0-.54-.01-.85-.03-.62-.09-1.43.02-2.5l-1-.1Zm-.14 8.42h11.72v-1H2.14v1ZM.52 13.9c-.16 1.01.72 1.75 1.62 1.75v-1c-.44 0-.68-.33-.63-.6l-1-.15Zm13.97.15c.05.27-.2.6-.63.6v1c.9 0 1.78-.74 1.62-1.75l-.99.15Z"/>
+                                        <circle cx="12.5" cy="4.5" r="2.5" fill="#2260FF"/>
+                                    </svg>
+                                </div>
+                                <div class="card__settings">
+                                    <svg class="pic-settings"><use xlink:href="sprite.svg#settings"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <div class="search__lists">
+                                <div class="search__doctors">
+                                    <svg class="pic-stetoscop"><use xlink:href="sprite.svg#stetoscop"></use></svg>
+                                    <div class="search__text">Doctors</div>
+                                </div>
+                                <div class="search__favorite">
+                                    <svg class="pic-like"><use xlink:href="sprite.svg#like"></use></svg>
+                                    <div class="search__text">Favorite</div>
+                                </div>
+                            </div>
+                            <form action="action.php" method="get" class="search__form">
+                                <button class="search__btn">
+                                    <svg class="pic-preferences"><use xlink:href="sprite.svg#preferences"></use></svg>
+                                </button>
+                                <input class="search__input" id="text" type="text" name="text" autocomplete="off">
+                                <div class="search__img">
+                                    <svg class="pic-magnifier"><use xlink:href="sprite.svg#magnifier"></use></svg>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="schedule">
+                        <h2 class="visually-hidden">A</h2>
+                        <div class="schedule__week">
+                            <div class="day">
+                                <div class="day__num">9</div>
+                                <div class="day__text">Mon</div>
+                            </div>
+                            <div class="day">
+                                <div class="day__num">10</div>
+                                <div class="day__text">Tue</div>
+                            </div>
+                            <div class="day">
+                                <div class="day__num">11</div>
+                                <div class="day__text">Wed</div>
+                            </div>
+                            <div class="day">
+                                <div class="day__num">12</div>
+                                <div class="day__text">Thu</div>
+                            </div>
+                            <div class="day">
+                                <div class="day__num">13</div>
+                                <div class="day__text">Fri</div>
+                            </div>
+                            <div class="day">
+                                <div class="day__num">14</div>
+                                <div class="day__text">Sat</div>
+                            </div>
+                        </div>
+                        <div class="schedule__timelist">
+                            <div class="schedule__time">
+                                <div class="schedule__hour">9 am</div>
+                                <div class="schedule__hour">10 am</div>
+                                <div class="schedule__hour">11 am</div>
+                                <div class="schedule__hour">12 am</div>
+                            </div>
+                            <div class="schedule__day">
+                                <div class="schedule__today">11 Wednesday - Today</div>
+                                <svg  class="schedule__divider" viewBox="0 0 227 1">
+                                    <line x1="0" y1="0" x2="227" y2="0"/>
+                                </svg>
+                                <div class="schedule__visit">
+                                    <div class="schedule__inner">
+                                        <div class="schedule__name">Dr. Olivia Turner, M.D.</div>
+                                        <div class="schedule__buttons">
+                                            <button class="schedule__btn">
+                                                <svg class="pic-accept"><use xlink:href="sprite.svg#accept"></use></svg>
+                                            </button>
+                                            <button class="schedule__btn">
+                                                <svg class="pic-decline"><use xlink:href="sprite.svg#decline"></use></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="schedule__text">Treatment and prevention of skin and photodermatitis.</div>
+                                </div>
+                                <svg  class="schedule__divider" viewBox="0 0 227 1">
+                                    <line x1="0" y1="0" x2="227" y2="0"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="doctorlist">
+                        <div class="doctor">
+                            <div class="doctor__pic">
+                                <img src="./images/doctors-img-1.png" alt="doctor" class="doctor__img">
+                            </div>
+                            <div class="doctor__inner">
+                                <div class="doctor__descr">
+                                    <div class="doctor__name">Dr. Olivia Turner, M.D.</div>
+                                    <div class="doctor__post">Dermato-Endocrinology</div>
+                                </div>
+                                <div class="doctor__buttons">
+                                    <div class="doctor__btns1">
+                                        <button class="raiting">
+                                            <svg class="pic-star"><use xlink:href="sprite.svg#star"></use></svg>
+                                            <div class="raiting__number">5</div>
+                                        </button>
+                                        <button class="chat">
+                                            <svg class="pic-chat"><use xlink:href="sprite.svg#chat"></use></svg>
+                                            <div class="chat__number">60</div>
+                                        </button>
+                                    </div>
+                                    <div class="doctor__btns2">
+                                        <button class="questions">
+                                            <svg class="pic-questions"><use xlink:href="sprite.svg#questions"></use></svg>
+                                        </button>
+                                        <button class="like">
+                                            <svg class="pic-fav"><use xlink:href="sprite.svg#like"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor">
+                            <div class="doctor__pic">
+                                <img src="./images/doctors-img-2.png" alt="doctor" class="doctor__img">
+                            </div>
+                            <div class="doctor__inner">
+                                <div class="doctor__descr">
+                                    <div class="doctor__name">Dr. Alexander Bennett, Ph.D.</div>
+                                    <div class="doctor__post">Dermato-Genetics</div>
+                                </div>
+                                <div class="doctor__buttons">
+                                    <div class="doctor__btns1">
+                                        <button class="raiting">
+                                            <svg class="pic-star"><use xlink:href="sprite.svg#star"></use></svg>
+                                            <div class="raiting__number">4,5</div>
+                                        </button>
+                                        <button class="chat">
+                                            <svg class="pic-chat"><use xlink:href="sprite.svg#chat"></use></svg>
+                                            <div class="chat__number">40</div>
+                                        </button>
+                                    </div>
+                                    <div class="doctor__btns2">
+                                        <button class="questions">
+                                            <svg class="pic-questions"><use xlink:href="sprite.svg#questions"></use></svg>
+                                        </button>
+                                        <button class="like">
+                                            <svg class="pic-fav"><use xlink:href="sprite.svg#like"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor">
+                            <div class="doctor__pic">
+                                <img src="./images/doctors-img-3.png" alt="doctor" class="doctor__img">
+                            </div>
+                            <div class="doctor__inner">
+                                <div class="doctor__descr">
+                                    <div class="doctor__name">Dr. Sophia Martinez, Ph.D.</div>
+                                    <div class="doctor__post">Cosmetic Bioengineering</div>
+                                </div>
+                                <div class="doctor__buttons">
+                                    <div class="doctor__btns1">
+                                        <button class="raiting">
+                                            <svg class="pic-star"><use xlink:href="sprite.svg#star"></use></svg>
+                                            <div class="raiting__number">5</div>
+                                        </button>
+                                        <button class="chat">
+                                            <svg class="pic-chat"><use xlink:href="sprite.svg#chat"></use></svg>
+                                            <div class="chat__number">150</div>
+                                        </button>
+                                    </div>
+                                    <div class="doctor__btns2">
+                                        <button class="questions">
+                                            <svg class="pic-questions"><use xlink:href="sprite.svg#questions"></use></svg>
+                                        </button>
+                                        <button class="like">
+                                            <svg class="pic-fav"><use xlink:href="sprite.svg#like"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor">
+                            <div class="doctor__pic">
+                                <img src="./images/doctors-img-4.png" alt="doctor" class="doctor__img">
+                            </div>
+                            <div class="doctor__inner">
+                                <div class="doctor__descr">
+                                    <div class="doctor__name">Dr. Michael Davidson, M.D.</div>
+                                    <div class="doctor__post">Nano-Dermatology</div>
+                                </div>
+                                <div class="doctor__buttons">
+                                    <div class="doctor__btns1">
+                                        <button class="raiting">
+                                            <svg class="pic-star"><use xlink:href="sprite.svg#star"></use></svg>
+                                            <div class="raiting__number">4,8</div>
+                                        </button>
+                                        <button class="chat">
+                                            <svg class="pic-chat"><use xlink:href="sprite.svg#chat"></use></svg>
+                                            <div class="chat__number">90</div>
+                                        </button>
+                                    </div>
+                                    <div class="doctor__btns2">
+                                        <button class="questions">
+                                            <svg class="pic-questions"><use xlink:href="sprite.svg#questions"></use></svg>
+                                        </button>
+                                        <button class="like">
+                                            <svg class="pic-fav"><use xlink:href="sprite.svg#like"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="menu">
+                        <div class="menu__panel">
+                            <svg class="pic-home"><use xlink:href="sprite.svg#home"></use></svg>
+                            <svg class="pic-message"><use xlink:href="sprite.svg#message"></use></svg>
+                            <svg class="pic-user"><use xlink:href="sprite.svg#user"></use></svg>
+                            <svg class="pic-calendar"><use xlink:href="sprite.svg#calendar"></use></svg>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

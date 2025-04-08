@@ -1,0 +1,803 @@
+@font-face {
+    font-family: 'Spartan100';
+    src: url('./fonts/LeagueSpartan-Thin.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-Thin.woff') format('woff'),
+        url('./fonts/LeagueSpartan-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan200';
+    src: url('./fonts/LeagueSpartan-ExtraLight.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-ExtraLight.woff') format('woff'),
+        url('./fonts/LeagueSpartan-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan300';
+    src: url('./fonts/LeagueSpartan-Light.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-Light.woff') format('woff'),
+        url('./fonts/LeagueSpartan-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan400';
+    src: url('./fonts/LeagueSpartan-Regular.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-Regular.woff') format('woff'),
+        url('./fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan500';
+    src: url('./fonts/LeagueSpartan-Medium.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-Medium.woff') format('woff'),
+        url('./fonts/LeagueSpartan-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan600';
+    src: url('./fonts/LeagueSpartan-SemiBold.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-SemiBold.woff') format('woff'),
+        url('./fonts/LeagueSpartan-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan700';
+    src: url('./fonts/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-Bold.woff') format('woff'),
+        url('./fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan800';
+    src: url('./fonts/LeagueSpartan-ExtraBold.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-ExtraBold.woff') format('woff'),
+        url('./fonts/LeagueSpartan-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan900';
+    src: url('./fonts/LeagueSpartan-Black.woff2') format('woff2'),
+        url('./fonts/LeagueSpartan-Black.woff') format('woff'),
+        url('./fonts/LeagueSpartan-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    width: 100vw;
+    height: 978px;
+    padding: 50px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 360px;
+    height: 800px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.header {
+    width: 100%;
+    height: 28px;
+    background-color: #E2EAFF;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 9px 30px 5px;
+}
+
+.header__time {
+    font-family: 'Spartan500';
+    width: 30px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.header__img {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+.pic-lte {
+    width: 13px;
+    height: 11px;
+}
+
+.pic-wifi {
+    width: 17px;
+    height: 10px;
+}
+
+.pic-battery {
+    width: 19px;
+    height: 11px;
+}
+
+.card {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px 30px;
+}
+
+.card__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__img {
+    width: 41px;
+    height: 41px;
+}
+
+.card__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.card__hello {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: #2260FF;
+}
+
+.card__name {
+    font-family: 'Spartan400';
+    font-size: 14px;
+    color: #000000;
+}
+
+.card__preferences {
+    display: flex;
+    gap: 4px;
+}
+
+.card__notifications {
+    width: 27px;
+    height: 27px;
+    background-color: #CAD6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card__notifications:hover > .pic-notifications circle {
+    fill: none;
+}
+
+.pic-notifications {
+    width: 16px;
+    height: 19px;
+    fill: #000000;
+}
+
+.pic-notifications path {
+    fill: #000000;
+}
+
+.pic-notifications circle {
+    fill: #2260FF;
+}
+
+.pic-notifications:hover {
+    width: 16px;
+    height: 19px;
+    fill: #000000;
+}
+
+.card__settings {
+    width: 27px;
+    height: 27px;
+    background-color: #CAD6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.card__settings:hover > .pic-settings {
+    transform: rotate(90deg);
+}
+
+.pic-settings {
+    width: 19px;
+    height: 19px;
+    fill: #000000;
+    transition: 1s linear;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__lists {
+    width: 97px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__doctors {
+    width: 40px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__doctors:hover > .pic-stetoscop {
+    fill: #000000;
+}
+
+.search__doctors:hover > .search__text {
+    color: #000000;
+}
+
+.pic-stetoscop {
+    width: 17px;
+    height: 20px;
+    fill: #2260FF;
+}
+
+.search__text {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    line-height: 14px;
+    color: #2260FF;
+}
+
+.search__favorite {
+    width: 40px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__favorite:hover > .pic-like {
+    stroke: #000000;
+}
+
+.search__favorite:hover > .search__text {
+    color: #000000;
+}
+
+.pic-like {
+    width: 19px;
+    height: 17px;
+    fill: none;
+    stroke: #2260FF;
+}
+
+.search__form {
+    position: relative;
+    width: 190px;
+    height: 33px;
+    padding: 3px;
+    border-radius: 16px;
+    background-color: #CAD6FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__btn {
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__btn:hover {
+    background-color: #2260FF;
+}
+
+.pic-preferences {
+    width: 16px;
+    height: 11px;
+    fill: none;
+    stroke: #000000;
+}
+
+.search__input {
+    width: 120px;
+    height: 20px;
+    background-color: #CAD6FF;
+    border: none;
+    outline: none;
+
+    font-family: 'Spartan300';
+    font-size: 16px;
+    color: #000000;
+}
+
+.search__img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search__img:hover > .pic-magnifier {
+    fill: #000000;
+}
+
+.pic-magnifier {
+    width: 17px;
+    height: 20px;
+    fill: #2260FF;
+}
+
+.schedule {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 30px;
+    background-color: #CAD6FF;
+}
+
+.schedule__week {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day {
+    width: 42px;
+    height: 64px;
+    padding: 17px 7px 12px;
+    color: #000000;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.day__num {
+    font-family: 'Spartan500';
+    font-size: 24px;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.day__text {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: inherit;
+}
+
+.day:hover {
+    background-color: #2260FF;
+    color: #FFFFFF;
+}
+
+.schedule__timelist {
+    width: 100%;
+    height: 123px;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule__time {
+    height: 90px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.schedule__hour {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: #2260FF;
+    text-transform: uppercase;
+}
+
+.schedule__day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.schedule__today {
+    font-family: 'Spartan400';
+    font-size: 12px;
+    color: #2260FF;
+    margin: 11px 33px 0 0;
+}
+
+.schedule__divider {
+    margin-top: 2px;
+    width: 227px;
+    height: 1px;
+    stroke: #2260FF;
+    stroke-dasharray: 2 2;
+    stroke-width: 1px;
+}
+
+.schedule__visit {
+    width: 203px;
+    height: 51px;
+    background-color: #CAD6FF;
+    border-radius: 13px;
+    margin: 13px 18px 12px 0;
+    padding: 9px 8px 4px 14px;
+}
+
+.schedule__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule__name {
+    font-family: 'Spartan500';
+    font-size: 14px;
+    color: #2260FF;
+}
+
+.schedule__buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.schedule__btn {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.schedule__btn:hover {
+    background-color: #2260FF;
+}
+
+.schedule__btn:hover > .pic-accept {
+    stroke: #FFFFFF;
+}
+
+.schedule__btn:hover > .pic-decline {
+    stroke: #FFFFFF;
+}
+
+.pic-accept {
+    width: 7px;
+    height: 6px;
+    stroke: #2260FF;
+}
+
+.pic-decline {
+    width: 5px;
+    height: 5px;
+    stroke: #2260FF;
+}
+
+.schedule__text {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: #000000;
+    width: 150px;
+}
+
+.doctorlist {
+    width: 100%;
+    padding: 7px 30px 0;
+}
+
+.doctor {
+    width: 100%;
+    height: 74px;
+    margin-top: 8px;
+    padding: 7px;
+    border-radius: 17px;
+    background-color: #CAD6FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctor__pic {
+    width: 57px;
+    height: 57px;
+}
+
+.doctor__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.doctor__descr {
+    width: 211px;
+    height: 39px;
+    padding: 9px 0 0 14px;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+}
+
+.doctor__name {
+    font-family: 'Spartan500';
+    font-size: 14px;
+    color: #2260FF;
+}
+
+.doctor__post {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: #000000;
+}
+
+.doctor__buttons {
+    width: 211px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctor__btns1 {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.raiting {
+    width: 43px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+    padding: 3px 5px;
+}
+
+.raiting:hover > .pic-star {
+    fill: #2260FF;
+}
+
+.pic-star {
+    width: 12px;
+    height: 11px;
+    stroke: #2260FF;
+    fill: none;
+}
+
+.raiting__number {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: #2260FF;
+    margin: 2px 0 0 5px;
+}
+
+.chat {
+    width: 43px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+    padding: 3px 5px;
+}
+
+.chat:hover > .pic-chat {
+    fill: #2260FF;
+    stroke: #FFFFFF;
+}
+
+.pic-chat {
+    width: 11px;
+    height: 11px;
+    stroke: #2260FF;
+    fill: none;
+}
+
+.chat__number {
+    font-family: 'Spartan300';
+    font-size: 12px;
+    color: #2260FF;
+    margin: 2px 0 0 5px;
+}
+
+.doctor__btns2 {
+    width: 42px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions {
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-questions {
+    width: 7px;
+    height: 11px;
+    stroke: #2260FF;
+    fill: none;
+}
+
+.questions:hover > .pic-questions {
+    stroke: #000000;
+}
+
+.like {
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-fav {
+    width: 10px;
+    height: 9px;
+    stroke: #2260FF;
+    fill: none;
+}
+
+.like:hover > .pic-fav {
+    fill: #2260FF;
+}
+
+.menu {
+    width: 100%;
+    padding: 15px 30px 0;
+}
+
+.menu__panel {
+    width: 100%;
+    height: 48px;
+    background-color: #2260FF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    padding: 12px 27px;
+}
+
+.pic-home {
+    width: 25px;
+    height: 25px;
+    fill: #FFFFFF;
+}
+
+.pic-home:hover {
+    fill: #00278C;
+}
+
+.pic-message {
+    width: 26px;
+    height: 23px;
+    stroke: #FFFFFF;
+    fill: none;
+}
+
+.pic-message:hover {
+    stroke: #00278C;
+}
+
+.pic-user {
+    width: 21px;
+    height: 23px;
+    stroke: #FFFFFF;
+    fill: none;
+}
+
+.pic-user:hover {
+    stroke: #00278C;
+}
+
+.pic-calendar {
+    width: 20px;
+    height: 23px;
+    fill: #FFFFFF;
+}
+
+.pic-calendar:hover {
+    fill: #00278C;
+}
