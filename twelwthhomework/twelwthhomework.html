@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="page">
+            <header class="head">
+                <div class="logo">
+                    <svg class="logo__pic"><use xlink:href="sprite.svg#shop-pic"></use></svg>
+                    <svg class="logo__text"><use xlink:href="sprite.svg#shop-txt"></use></svg>
+                </div>
+                <div class="navbar">
+                    <nav class="navbar__menu">
+                        <a href="#" class="navbar__link">Marketplace</a>
+                        <a href="#" class="navbar__link">Rankings</a>
+                        <a href="#" class="navbar__link">Connect a wallet</a>
+                    </nav>
+                    <button class="navbar__btn"><svg class="navbar__pic"><use xlink:href="sprite.svg#user-pic"></use></svg>Sign Up</button>
+                </div>
+                <button class="head__burger"><svg class="head__pic"><use xlink:href="sprite.svg#burg"></use></svg></button>
+            </header>
+            <main>
+                <section class="create">
+                    <picture class="create__pic">
+                        <source srcset="./images/create-img-mob.avif" type="image/avif" media="(max-width: 392px)">
+                        <source srcset="./images/create-img-tab.avif" type="image/avif" media="(max-width: 920px)">
+                        <source srcset="./images/create-img.avif" type="image/avif">
+                        <source srcset="./images/create-img-mob.webp" type="image/webp" media="(max-width: 392px)">
+                        <source srcset="./images/create-img-tab.webp" type="image/webp" media="(max-width: 920px)">
+                        <source srcset="./images/create-img.webp" type="image/webp">
+                        <img src="./images/create-img.jpg" alt="IMG" class="create__img">
+                    </picture>
+                    <div class="create__form">
+                        <div class="create__header">
+                            <h2 class="create__title">Create Account</h2>
+                            <p class="create__descr">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+                        </div>
+                        <div class="form">
+                            <form class="form__fields">
+                                <div class="form__field">
+                                    <svg class="form__pic"><use xlink:href="sprite.svg#user-pic"></use></svg>
+                                    <input type="text" id="username" name="username" placeholder="Username" required>
+                                </div>
+                                <div class="form__field">
+                                    <svg class="form__pic"><use xlink:href="sprite.svg#envelope"></use></svg>
+                                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="form__field">
+                                    <svg class="form__pic"><use xlink:href="sprite.svg#locker"></use></svg>
+                                    <input type="password" id="password" name="password" placeholder="Password" required>
+                                </div>
+                                <div class="form__field">
+                                    <svg class="form__pic"><use xlink:href="sprite.svg#locker"></use></svg>
+                                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                                </div>
+                            </form>
+                            <button class="form__btn">Create account</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="foot">
+                <div class="foot__content">
+                    <div class="info">
+                        <div class="info__logo">
+                            <svg class="info__logopic"><use xlink:href="sprite.svg#shop-pic"></use></svg>
+                            <svg class="info__logotext"><use xlink:href="sprite.svg#shop-txt"></use></svg>
+                        </div>
+                        <div class="info__wrapper">
+                            <p class="info__text">NFT marketplace UI created with Anima for Figma.</p>
+                            <div class="info__inner">
+                                <p class="info__text">Join our community</p>
+                                <div class="info__links">
+                                    <a class="info__link" href="#"><svg class="info__pic"><use xlink:href="sprite.svg#discord"></use></svg></a>
+                                    <a class="info__link" href="#"><svg class="info__pic"><use xlink:href="sprite.svg#youtube"></use></svg></a>
+                                    <a class="info__link" href="#"><svg class="info__pic info__pic_st"><use xlink:href="sprite.svg#twitter"></use></svg></a>
+                                    <a class="info__link" href="#"><svg class="info__pic"><use xlink:href="sprite.svg#insta"></use></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot__explore">
+                        <p class="foot__subheader">Explore</p>
+                        <div class="foot__links">
+                            <p class="foot__text">
+                                <a class="foot__link" href="#">Marketplace</a>
+                            </p>
+                            <p class="foot__text">
+                                <a class="foot__link" href="#">Rankings</a>
+                            </p>
+                            <p class="foot__text">
+                                <a class="foot__link" href="#">Connect a wallet</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="subscr">
+                        <p class="subscr__subheader">Join our weekly digest</p>
+                        <div class="subscr__wrapper">
+                            <p class="subscr__text">Get exclusive promotions & updates straight to your inbox.</p>
+                            <form class="subscr__form" id="subscr" method="POST">
+                                <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                                <button class="subscr__btn"><svg class="subscr__pic"><use xlink:href="sprite.svg#envelope"></use></svg>Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot__wrapper">
+                    <div class="foot__divider"></div>
+                    <div class="foot__copy">© NFT Market. Use this template freely.</div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
